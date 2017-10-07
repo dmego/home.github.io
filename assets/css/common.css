@@ -64,10 +64,7 @@ a{
   max-width: $site-author-image-width;
   height: $site-author-image-height;
   border: $site-author-image-border-width solid $site-author-image-border-color;
-  /* 头像圆形 */
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
+
   box-shadow: inset 0 -1px 0 #333sf;
   /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
     (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
