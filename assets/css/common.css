@@ -46,7 +46,6 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(168,168,168,.4);
 	border-radius: 4px;
 	z-index: -1;
 }
