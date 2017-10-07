@@ -1,8 +1,8 @@
 {
     "organization": {
         "link": "http://dmego.me/",
-        "name": "DMEGO",
-        "suffix": ", Inc."
+        "name": "&nbsp;<i class='fa fa-user' aria-hidden='true'></i>&nbsp;",
+        "suffix": "木青子日"
     },
     "powered_by": [
         {
