@@ -20,17 +20,17 @@ body {
 }
 
 .irb-vps-main {
-    padding: 40px 15px;
+    padding: 80px 15px;
     text-align: center;
 }
 .irb-vps-footer {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    color: #777;
+    color: #333;
     text-align: center;
     border-top: 1px solid #e5e5e5;
 }
 .irb-vps-avatar img {
-    width: 320px;
+    width: 250px;
 }
