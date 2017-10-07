@@ -5,16 +5,9 @@
 	margin: 0;
 }
 
-html{
-height: 100%;
-}
-
 body{
-	min-height:100%;
-	margin:0;
-	padding:0;
+	padding-top: 50px;
 	color: #333;
-	position: relative;
 	-webkit-user-select: none;
 	font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
 }
@@ -28,7 +21,6 @@ a{
 	width: 100%;
 	top: 0;
 	left: 0;
-  background-image: url(../images/bg.min.jpg);
 	overflow: none;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -54,7 +46,7 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,.4);
+	background: rgba(168,168,168,.4);
 	border-radius: 4px;
 	z-index: -1;
 }
@@ -74,6 +66,7 @@ a{
 	margin: 5px 0;
 	text-align: center;
 }
+
 .wrap .callMe{
 	width: 60%;
 	margin: 5px auto 2px;
@@ -102,15 +95,12 @@ a{
 }
 
 .home-footer {
-		position:absolute;
-		bottom:0;
-		width:100%;
-		height:100px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
 }
 
 @media screen and (max-width: 420px){
