@@ -18,3 +18,5 @@ body {
 .irb-vps-avatar img {
     width: 250px;
 }
+
+a:hover {color: black; text-decoration:underline;}
