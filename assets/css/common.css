@@ -5,6 +5,9 @@
 	margin: 0;
 }
 body{
+	min-height:100%;
+	margin:0;
+	padding:0;
 	color: #333;
 	position: relative;
 	-webkit-user-select: none;
@@ -94,11 +97,14 @@ a{
 }
 
 .home-footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:100px;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
     color: #777;
-    text-align: center;
     border-top: 1px solid #e5e5e5;
 }
 
