@@ -1,4 +1,7 @@
 
+body {
+    padding-top: 50px;
+}
  .btn{
 	font-size: 12px;
 	border: 1px solid #333;
@@ -11,19 +14,11 @@
 }
  .btn:hover{
 	background: #333;
-	color: #eee;
+	color: #fff;
 	opacity: .8;
 	cursor: pointer;
 }
 
-a{
-	color: #333;
-	text-decoration: none;
-}
-
-body {
-    padding-top: 50px;
-}
 .irb-vps-main {
     padding: 40px 15px;
     text-align: center;
