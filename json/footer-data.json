@@ -1,0 +1,21 @@
+{
+    "organization": {
+        "link": "http://dmego.me/",
+        "name": "DMEGO",
+        "suffix": ", Inc."
+    },
+    "powered_by": [
+        {
+            "link": "http://getbootstrap.com/",
+            "name": "Bootstrap"
+        },
+        {
+            "link": "http://jquery.com/",
+            "name": "jQuery"
+        },
+        {
+            "link": "http://fortawesome.github.io/Font-Awesome/",
+            "name": "Font Awesome"
+        }
+    ]
+}

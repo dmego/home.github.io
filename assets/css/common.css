@@ -1,0 +1,121 @@
+/* common.css */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	color: #333;
+	position: relative;
+	-webkit-user-select: none;
+	font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.mask-window{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+  /*background-image: url(../images/bg.min.jpg);*/
+	overflow: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	transition: all .5s;
+	animation: backgrounds 360s infinite linear;
+}
+.wrap{
+	width: 356px;
+	border-radius: 3px;
+	position: relative;
+	padding: 30px 10px 25px 10px ;
+	/*z-index: 999;*/
+	animation: down 1s ease-in-out;
+	text-align: center;
+}
+.wrap .mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.4);
+	border-radius: 4px;
+	z-index: -1;
+}
+.wrap .logo{
+	height: 100px;
+	width: 100px;
+	z-index: 999;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	opacity: 0.9;
+}
+.wrap .content{
+	color: #333;
+	padding: 5px;
+	opacity: 0.9;
+	margin: 5px 0;
+	text-align: center;
+}
+.wrap .callMe{
+	width: 60%;
+	margin: 5px auto 2px;
+	display: flex;
+	justify-content: space-around;
+}
+.wrap .callMe a{
+	opacity: 0.9;
+	font-size: 22px;
+}
+.wrap .btn{
+	font-size: 12px;
+	border: 1px solid #333;
+	border-radius: 3px;
+	padding: 3px 8px;
+	margin: 10px 2px 0 2px;
+	display: inline-block;
+	opacity: .9;
+	transition: all .5s;
+}
+.wrap .btn:hover{
+	background: #333;
+	color: #eee;
+	opacity: .8;
+	cursor: pointer;
+}
+
+.home-footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 420px){
+	.wrap{
+		width: 80%;
+	}
+}
+
+/*动画*/
+@keyframes down{
+	0%{opacity:0;transform:scale(1) translateY(-20em);}
+	75%{transform:scale(1) translateY(1em);}
+	100%{opacity:1;transform:scale(1) translateY(0);}
+}
+@keyframes backgrounds{
+	0%{background-position:0%;}
+	50%{background-position:100%;}
+	100%{background-position:0%;}
+}
