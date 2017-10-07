@@ -19,6 +19,18 @@ body {
     width: 250px;
 }
 
+.callMe{
+	width: 60%;
+	margin: 5px auto 2px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.callMe a{
+	opacity: 0.9;
+	font-size: 22px;
+}
+
 .btn{
 	font-size: 12px;
 	border: 1px solid #333;
@@ -36,4 +48,3 @@ body {
 	cursor: pointer;
 }
 
-a:hover {color: white; text-decoration:none;}
