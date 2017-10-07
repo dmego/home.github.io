@@ -22,7 +22,7 @@ body {
 }
 
 .callMe {
-	width: 60%;
+	width: 200px;
 	margin: 5px auto 2px;
 	display: flex;
 	justify-content: space-around;
@@ -34,10 +34,10 @@ body {
 }
 
 .btn {
-	font-size: 12px;
+	font-size: 15px;
 	border: 1px solid #333;
 	border-radius: 3px;
-	padding: 3px 8px;
+	padding: 8px 8px;
 	margin: 10px 2px 0 2px;
 	display: inline-block;
 	opacity: .9;
