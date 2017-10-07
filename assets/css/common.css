@@ -1,37 +1,39 @@
 /* common.css */
 
 body {
-    padding-top: 50px;
+	padding-top: 50px;
 }
 
 .irb-vps-main {
-    padding: 80px 15px;
-    text-align: center;
-}
-.irb-vps-footer {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
-}
-.irb-vps-avatar img {
-    width: 250px;
+	padding: 80px 15px;
+	text-align: center;
 }
 
-.callMe{
+.irb-vps-footer {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+
+.irb-vps-avatar img {
+	width: 250px;
+}
+
+.callMe {
 	width: 60%;
 	margin: 5px auto 2px;
 	display: flex;
 	justify-content: space-around;
 }
 
-.callMe a{
+.callMe a {
 	opacity: 0.9;
 	font-size: 22px;
 }
 
-.btn{
+.btn {
 	font-size: 12px;
 	border: 1px solid #333;
 	border-radius: 3px;
@@ -41,10 +43,20 @@ body {
 	opacity: .9;
 	transition: all .5s;
 }
-.btn:hover{
+
+.btn:hover {
 	background: #333;
 	color: #eee;
 	opacity: .8;
 	cursor: pointer;
 }
 
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+#ab {
+	color: white;
+	text-decoration: none;
+}
