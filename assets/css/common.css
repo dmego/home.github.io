@@ -1,22 +1,7 @@
+/* common.css */
 
 body {
-	  color: #333;
     padding-top: 50px;
-}
- .btn{
-	font-size: 12px;
-	border: 1px solid #333;
-	border-radius: 3px;
-	padding: 3px 8px;
-	margin: 10px 2px 0 2px;
-	display: inline-block;
-	opacity: .9;
-	transition: all .5s;
-}
- .btn:hover{
-	color: #eee;
-	opacity: .8;
-	cursor: pointer;
 }
 
 .irb-vps-main {
@@ -27,31 +12,10 @@ body {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    color: #333;
+    color: #777;
     text-align: center;
     border-top: 1px solid #e5e5e5;
 }
 .irb-vps-avatar img {
     width: 250px;
-}
-
-@media screen and (max-width: 420px){
-	.wrap{
-		width: 80%;
-	}
-}
-a{
-	color: #333;
-	text-decoration: none;
-}
-/*动画*/
-@keyframes down{
-	0%{opacity:0;transform:scale(1) translateY(-20em);}
-	75%{transform:scale(1) translateY(1em);}
-	100%{opacity:1;transform:scale(1) translateY(0);}
-}
-@keyframes backgrounds{
-	0%{background-position:0%;}
-	50%{background-position:100%;}
-	100%{background-position:0%;}
 }
