@@ -19,4 +19,21 @@ body {
     width: 250px;
 }
 
-a:hover {color: black; text-decoration:underline;}
+.btn{
+	font-size: 12px;
+	border: 1px solid #333;
+	border-radius: 3px;
+	padding: 3px 8px;
+	margin: 10px 2px 0 2px;
+	display: inline-block;
+	opacity: .9;
+	transition: all .5s;
+}
+.btn:hover{
+	background: #333;
+	color: #eee;
+	opacity: .8;
+	cursor: pointer;
+}
+
+a:hover {color: white; text-decoration:none;}
