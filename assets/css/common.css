@@ -16,6 +16,14 @@
 	cursor: pointer;
 }
 
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+body {
+    padding-top: 50px;
+}
 .irb-vps-main {
     padding: 40px 15px;
     text-align: center;
