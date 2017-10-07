@@ -4,6 +4,11 @@
 	padding: 0;
 	margin: 0;
 }
+
+html{
+height: 100%;
+}
+
 body{
 	min-height:100%;
 	margin:0;
@@ -23,7 +28,7 @@ a{
 	width: 100%;
 	top: 0;
 	left: 0;
-  /*background-image: url(../images/bg.min.jpg);*/
+  background-image: url(../images/bg.min.jpg);
 	overflow: none;
 	background-repeat: no-repeat;
 	background-size: cover;
