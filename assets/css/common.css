@@ -56,7 +56,7 @@ a{
 	text-decoration: none;
 }
 
-#ab {
+#ab:hover {
 	color: white;
 	text-decoration: none;
 }
