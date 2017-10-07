@@ -14,7 +14,6 @@ body {
 	transition: all .5s;
 }
  .btn:hover{
-	background: #333;
 	color: #eee;
 	opacity: .8;
 	cursor: pointer;
