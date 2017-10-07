@@ -120,3 +120,19 @@ a{
 	50%{background-position:100%;}
 	100%{background-position:0%;}
 }
+
+.irb-vps-main {
+    padding: 40px 15px;
+    text-align: center;
+}
+.irb-vps-footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+.irb-vps-avatar img {
+    width: 320px;
+}
