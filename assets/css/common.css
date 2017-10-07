@@ -1,5 +1,6 @@
 
 body {
+	  color: #333;
     padding-top: 50px;
 }
  .btn{
@@ -14,7 +15,7 @@ body {
 }
  .btn:hover{
 	background: #333;
-	color: #fff;
+	color: #eee;
 	opacity: .8;
 	cursor: pointer;
 }
@@ -33,4 +34,25 @@ body {
 }
 .irb-vps-avatar img {
     width: 250px;
+}
+
+@media screen and (max-width: 420px){
+	.wrap{
+		width: 80%;
+	}
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+/*动画*/
+@keyframes down{
+	0%{opacity:0;transform:scale(1) translateY(-20em);}
+	75%{transform:scale(1) translateY(1em);}
+	100%{opacity:1;transform:scale(1) translateY(0);}
+}
+@keyframes backgrounds{
+	0%{background-position:0%;}
+	50%{background-position:100%;}
+	100%{background-position:0%;}
 }
