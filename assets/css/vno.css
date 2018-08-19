@@ -6292,14 +6292,14 @@ hr {
 .panel-cover--overlay {
   display: block;
   position: absolute;
-  z-index: 0;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(68, 68, 68, 0.6);
-  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
-  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9))
+  background-color: #000;
+  z-index: 1;
+  -moz-opacity: .55;
+  opacity: .55;
 }
 .panel-cover__logo {
   margin-bottom: 0.2em;
@@ -6729,18 +6729,23 @@ input[type="tel"]:-ms-input-placeholder {
 }
 
 
-/****************************/
-.black_overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.black_overlay {
-  left: 0;
-  background-color: #000;
-  z-index: 1;
-  -moz-opacity: .55;
-  opacity: .55;
-  filter: alpha(opacity=55);
+/***/
+.profilepic {
+  text-align: center;
+  display: block;
+  -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.5), 0px 2px 20px 3px rgba(0,0,0,0.25);
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.5), 0px 2px 20px 3px rgba(0,0,0,0.25);
+  border-radius: 300px;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #88acdb;
+  -webkit-transition: all 0.2s ease-in;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
 }
