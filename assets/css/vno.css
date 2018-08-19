@@ -6304,7 +6304,7 @@ hr {
 }
 .panel-cover__logo {
   margin-bottom: 0.2em;
-  
+
 }
 .panel-cover__description {
   margin: 0 30px;
@@ -6754,12 +6754,12 @@ input[type="tel"]:-ms-input-placeholder {
 
 
 
-.profilepic img.show {
+.profilepic .img.show {
   width: 100%;
   height: 100%;
   opacity: 1;
 }
-.profilepic img {
+.profilepic .img {
   width: 20%;
   height: 20%;
   border-radius: 300px;

@@ -36,4 +36,9 @@ $(document).ready(function () {
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
+	
+	$(".js-avatar")[0].onload = function () {
+		$(".js-avatar").addClass("show");
+	}
+
 });
