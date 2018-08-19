@@ -1,6 +1,6 @@
 // 一言调用
-$.post("https://sslapi.hitokoto.cn/", null, function (e) {
-	$('.content').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
+$.post("https://v1.hitokoto.cn/", null, function (e) {
+	$('.description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
 }, 'JSON');
 
 var iUp = (function () {
@@ -36,7 +36,7 @@ $(document).ready(function () {
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
-	
+
 	$(".js-avatar")[0].onload = function () {
 		$(".js-avatar").addClass("show");
 	}
