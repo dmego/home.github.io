@@ -6265,7 +6265,7 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url("https://dmego.cn/bing.php") center center no-repeat #666;
+  background: url("http://bing.ioliu.cn/v1/rand") center center no-repeat #666;
   background-size: cover;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6496,102 +6496,6 @@ i {
 *:focus {
   outline: none;
 }
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"] {
-  width: 240px;
-  padding: 1em 1em;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  font-size: 0.9em;
-  color: #666;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus {
-  border-color: #5ba4e5;
-}
-input[type="text"]::-webkit-input-placeholder,
-input[type="password"]::-webkit-input-placeholder,
-input[type="datetime"]::-webkit-input-placeholder,
-input[type="datetime-local"]::-webkit-input-placeholder,
-input[type="date"]::-webkit-input-placeholder,
-input[type="month"]::-webkit-input-placeholder,
-input[type="time"]::-webkit-input-placeholder,
-input[type="week"]::-webkit-input-placeholder,
-input[type="number"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-input[type="url"]::-webkit-input-placeholder,
-input[type="search"]::-webkit-input-placeholder,
-input[type="tel"]::-webkit-input-placeholder {
-  color: #ccc;
-}
-input[type="text"]::-moz-placeholder,
-input[type="password"]::-moz-placeholder,
-input[type="datetime"]::-moz-placeholder,
-input[type="datetime-local"]::-moz-placeholder,
-input[type="date"]::-moz-placeholder,
-input[type="month"]::-moz-placeholder,
-input[type="time"]::-moz-placeholder,
-input[type="week"]::-moz-placeholder,
-input[type="number"]::-moz-placeholder,
-input[type="email"]::-moz-placeholder,
-input[type="url"]::-moz-placeholder,
-input[type="search"]::-moz-placeholder,
-input[type="tel"]::-moz-placeholder {
-  color: #ccc;
-}
-input[type="text"]:-moz-placeholder,
-input[type="password"]:-moz-placeholder,
-input[type="datetime"]:-moz-placeholder,
-input[type="datetime-local"]:-moz-placeholder,
-input[type="date"]:-moz-placeholder,
-input[type="month"]:-moz-placeholder,
-input[type="time"]:-moz-placeholder,
-input[type="week"]:-moz-placeholder,
-input[type="number"]:-moz-placeholder,
-input[type="email"]:-moz-placeholder,
-input[type="url"]:-moz-placeholder,
-input[type="search"]:-moz-placeholder,
-input[type="tel"]:-moz-placeholder {
-  color: #ccc;
-}
-input[type="text"]:-ms-input-placeholder,
-input[type="password"]:-ms-input-placeholder,
-input[type="datetime"]:-ms-input-placeholder,
-input[type="datetime-local"]:-ms-input-placeholder,
-input[type="date"]:-ms-input-placeholder,
-input[type="month"]:-ms-input-placeholder,
-input[type="time"]:-ms-input-placeholder,
-input[type="week"]:-ms-input-placeholder,
-input[type="number"]:-ms-input-placeholder,
-input[type="email"]:-ms-input-placeholder,
-input[type="url"]:-ms-input-placeholder,
-input[type="search"]:-ms-input-placeholder,
-input[type="tel"]:-ms-input-placeholder {
-  color: #ccc;
-}
 
 @media all and (max-width: 1100px) {
   .panel-cover__logo {
@@ -6729,6 +6633,34 @@ input[type="tel"]:-ms-input-placeholder {
     display: block;
     margin-bottom: 0.4em;
   }
+}
+/***************************************************************************************/
+.remark {
+  position: absolute;
+  z-index: 900;
+  bottom: 0;
+  right: 5px;
+  text-align: center;
+  color: #fff;
+  opacity: .60 !important;
+  padding-bottom: 3px;
+  padding-right: 18px;
+  letter-spacing: -3px;
+  font-size: 0;
+}
+@media screen and (max-width: 960px){
+  .remark {
+    display: none;
+  }
+}
+.power {
+  display: inline-block;
+  color: #fff !important;
+  letter-spacing: 0;
+  font-size: 10px;
+  line-height: 16px;
+  margin: 0;
+  vertical-align: middle;
 }
 
 

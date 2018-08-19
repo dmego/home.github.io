@@ -1,8 +1,3 @@
-// 一言调用
-$.post("https://v1.hitokoto.cn/", null, function (e) {
-	$('#description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
-}, 'JSON');
-
 var iUp = (function () {
 	var t = 0,
 		d = 150,
@@ -33,6 +28,15 @@ var iUp = (function () {
 })();
 
 $(document).ready(function () {
+	// 一言调用
+	fetch('https://v1.hitokoto.cn').then(function (res) {
+		return res.json();
+	}).then(function (e) {
+		$('#description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
+	}).catch(function (err) {
+		console.error(err);
+	})
+
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});

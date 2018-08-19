@@ -2,15 +2,29 @@
 [![License](https://img.shields.io/github/license/dmego/home.github.io.svg)](/LICENSE)
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/dmego)
 
-## 个人主页
-<center>
-<p>这是我的个人主页</p>
-<p>精于心，简于形</p>
-</center>
+### 个人主页
+>这是我的个人主页
+
+>衍生自 [Vno](https://github.com/onevcat/vno-jekyll)主题
+
+>页面加载效果借鉴于[Mno](https://github.com/mcc108/mno) 主题
 
 ### 效果图
-![mark](http://ovasw3yf9.bkt.clouddn.com/blog/171008/IcGg0L5dAE.gif)
+
+>静态图
+
+![主页PNG](./img/home.png)
+
+>动态图
+
+![主页GIF](./img/home.gif)
 
 ### 注
-- 访问地址：[个人主页](http://home.dmego.me/)
+
+- 访问地址：[个人主页](http://i.dmego.me/)
 - 本站使用了 [一言](http://hitokoto.cn/) 的 API 服务
+- 本站使用了 [Bing 壁纸 API](https://github.com/xCss/bing/) 服务
+
+### 更新时间
+
+>2018-8-20
