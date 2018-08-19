@@ -1,6 +1,6 @@
 // 一言调用
 $.post("https://v1.hitokoto.cn/", null, function (e) {
-	$('.description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
+	$('#description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
 }, 'JSON');
 
 var iUp = (function () {
