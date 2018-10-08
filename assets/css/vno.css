@@ -6222,15 +6222,9 @@ hr {
   display: table-cell;
   vertical-align: middle;
 }
-@font-face {
-  font-family:'OldEnglish';
-  src: url('//cdn.webfont.youziku.com/webfonts/nomal/123918/38734/5bbb47c6f629d9157ca681ba.gif?r=87393862736');
-  src: url('//cdn.webfont.youziku.com/webfonts/nomal/123918/38734/5bbb47c6f629d9157ca681ba.gif?r=87393862736?#iefix') format('embedded-opentype'), url('//cdn.webfont.youziku.com/webfonts/nomal/123918/38734/5bbb47c6f629d9157ca681ba.png?r=87393862736') format('woff2'), url('//cdn.webfont.youziku.com/webfonts/nomal/123918/38734/5bbb47c6f629d9157ca681ba.bmp?r=87393862736') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 .panel-title {
-  font-family: 'Old English Text MT','OldEnglish', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Old English Text MT','EngraversOldEnglishBT-Bold', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   margin: 0 0 5px 0;
   font-size: 2.5em;
 /*letter-spacing: 4px;*/
