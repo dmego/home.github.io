@@ -1,3 +1,6 @@
+@import url("../font/oldenglishtextmt2.css");
+
+
 .animated {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -6223,7 +6226,7 @@ hr {
   vertical-align: middle;
 }
 .panel-title {
-  font-family: 'Old English Text MT', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Old English Text MT','oldenglishtextmt2', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   margin: 0 0 5px 0;
   font-size: 2.5em;
 /*letter-spacing: 4px;*/
