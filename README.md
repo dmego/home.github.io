@@ -23,8 +23,9 @@
 
 - 访问地址：[个人主页](http://i.dmego.me/)
 - 使用了 [一言](http://hitokoto.cn/) 的 API 服务
-- 使用了 [Bing 壁纸 API](https://github.com/xCss/bing/) 服务
+- ~~使用了 [Bing 壁纸 API](https://github.com/xCss/bing/) 服务~~
+- 使用了 [Yahoo Query Language (YQL)](https://github.com/xCss/bing/) 来解决获取 Bing 壁纸跨域问题
 
 ### 更新时间
 
->2018-8-20
+>2018-11-20
