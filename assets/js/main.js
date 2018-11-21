@@ -42,17 +42,30 @@ $(document).ready(function () {
 	var url = 'https://query.yahooapis.com/v1/public/yql' + 
     '?q=' + encodeURIComponent('select * from json where url=@url') +
     '&url=' + encodeURIComponent('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8') +
-    '&format=json&callback=?';
-	$.getJSON(url, function(result) {
-		console.log(result)
-		var random = Math.round(Math.random() * 8 - 0.5);
-		var img = result.query.results.json.images[random];
-		var url = "https://www.bing.com"+img.url;
-		var $panel = $('#panel');
+	'&format=json&callback=?';
+	
+	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
+	var random = Math.round(Math.random() * 8 - 0.5);
+	var $panel = $('#panel');
+	if(imgUrls == null){
+		imgUrls = new Array();
+		$.getJSON(url, function(result) {
+			images = result.query.results.json.images;
+			for (let i = 0; i < images.length; i++) {
+				const item = images[i];
+				imgUrls.push(item.url);
+			}
+			var imgUrl = imgUrls[random];
+			var url = "https://www.bing.com"+imgUrl;
+			$panel.css("background", "url('"+url+"') center center no-repeat #666");
+			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
+		});
+	}else{
+		var imgUrl = imgUrls[random];
+		var url = "https://www.bing.com"+imgUrl;
 		$panel.css("background", "url('"+url+"') center center no-repeat #666");
-	});
-
-
+	}
+	
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
