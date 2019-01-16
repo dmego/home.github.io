@@ -66,6 +66,7 @@ $(document).ready(function () {
 			var imgUrl = imgUrls[index];
 			var url = "https://www.bing.com"+imgUrl;
 			$panel.css("background", "url('"+url+"') center center no-repeat #666");
+			$panel.css("background-size", "cover");
 			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
 			sessionStorage.setItem("index",index);
 			});
@@ -77,6 +78,7 @@ $(document).ready(function () {
 		var imgUrl = imgUrls[index];
 		var url = "https://www.bing.com"+imgUrl;
 		$panel.css("background", "url('"+url+"') center center no-repeat #666");
+		$panel.css("background-size", "cover");
 		sessionStorage.setItem("index",index);
 	}
 	
