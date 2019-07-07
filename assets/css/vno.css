@@ -1,3 +1,242 @@
+/*头像效果-start*/
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+.ih-item.circle.effect {
+  margin: 0 auto;
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+.ih-item.circle.effect .img {
+  z-index: 11;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ih-item.circle.effect .info {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.ih-item.circle.effect .info .info-back {
+  opacity: 1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+}
+
+.ih-item.circle.effect .info h2 {
+  color: #fff;    
+  position: relative;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-top: 40px;
+  height: 35px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect .info p {
+  color: #bbb;
+  padding: 0px 0px 0px 0px;
+  font-style: italic;
+  padding-left: 0px;
+  font-size: 10px;
+}
+
+.ih-item.circle.effect.bottom_to_top .img {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.ih-item.circle.effect.bottom_to_top a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+  -moz-transform: rotate3d(1, 0, 0, 180deg);
+  -ms-transform: rotate3d(1, 0, 0, 180deg);
+  -o-transform: rotate3d(1, 0, 0, 180deg);
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.ih-item.circle.effect.top_to_bottom .img {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.ih-item.circle.effect.top_to_bottom a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, -180deg);
+  -moz-transform: rotate3d(1, 0, 0, -180deg);
+  -ms-transform: rotate3d(1, 0, 0, -180deg);
+  -o-transform: rotate3d(1, 0, 0, -180deg);
+  transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.ih-item.circle.effect.left_to_right .img {
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.ih-item.circle.effect.left_to_right a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.ih-item.circle.effect.right_to_left .img {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.ih-item.circle.effect.right_to_left a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.ih-item a {
+  color: #333;
+}
+
+.ih-item a:hover {
+  text-decoration: none;
+}
+
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ih-item.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.ih-item.circle .img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle .img img {
+  border-radius: 50%;
+}
+
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media all and (max-width: 780px) {
+  .ih-item.circle .img {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      /*margin-top: 20px;*/
+      border-radius: 50%;
+  }
+  .ih-item.circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+  .ih-item.circle .info .info-back h2{
+    font-size: 0.9em;
+  }
+}
+/**************抖动效果******************/
+.profilepic {
+  text-align: center;
+  display: block;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0px 2px 20px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0px 2px 20px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 300px;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #88acdb;
+  -webkit-transition: all 0.2s ease-in;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
+}
+
+/* .profilepic img.show {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.profilepic img {
+  width: 20%;
+  height: 20%;
+  border-radius: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+} 
+
+.profilepic:hover {
+  -webkit-animation: btnGroups 1s linear;
+  -webkit-animation: btnGroups 1s linear;
+  -moz-animation: btnGroups 1s linear;
+  -ms-animation: btnGroups 1s linear;
+  animation: btnGroups 1s linear;
+} */
+
+/*头像效果-end*/
+
 .animated {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -8249,50 +8488,6 @@ i {
   background-size: 12px 12px;
   background-position: 3px 2px;
   padding-left: 18px;
-}
-
-/*************************************************************************************/
-.profilepic {
-  text-align: center;
-  display: block;
-  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0px 2px 20px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0px 2px 20px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 300px;
-  width: 128px;
-  height: 128px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  background: #88acdb;
-  -webkit-transition: all 0.2s ease-in;
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  text-align: center;
-}
-
-
-.profilepic img.show {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-}
-
-.profilepic img {
-  width: 20%;
-  height: 20%;
-  border-radius: 300px;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in;
-}
-
-.profilepic:hover {
-  -webkit-animation: btnGroups 1s linear;
-  -webkit-animation: btnGroups 1s linear;
-  -moz-animation: btnGroups 1s linear;
-  -ms-animation: btnGroups 1s linear;
-  animation: btnGroups 1s linear;
 }
 
 @-webkit-keyframes btnGroups {
