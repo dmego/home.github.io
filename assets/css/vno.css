@@ -8436,7 +8436,7 @@ i {
   right: 5px;
   text-align: center;
   color: #fff;
-  opacity: .60 !important;
+  /*opacity: .60 !important;*/
   padding-bottom: 3px;
   padding-right: 18px;
   letter-spacing: -3px;
@@ -8453,7 +8453,7 @@ i {
   display: inline-block;
   color: #fff !important;
   letter-spacing: 0;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 16px;
   margin: 0;
   vertical-align: middle;

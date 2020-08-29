@@ -91,6 +91,7 @@ $(document).ready(function () {
 	}
 });
 
+
 $('.btn-mobile-menu__icon').click(function() {
     if ($('.navigation-wrapper').css('display') == "block") {
       $('.navigation-wrapper').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
