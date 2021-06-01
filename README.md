@@ -1,4 +1,4 @@
-[![Website](https://img.shields.io/website-up-down-green-red/http/i.dmego.me.svg)](http://i.dmego.me/)
+[![Website](https://img.shields.io/website-up-down-green-red/http/i.dmego.cn.svg)](http://i.dmego.cn/)
 [![License](https://img.shields.io/github/license/dmego/home.github.io.svg)](/LICENSE)
 [![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/dmego)
 
@@ -24,7 +24,7 @@
 
 ### 注
 
-- 访问地址：[个人主页](http://i.dmego.me/)
+- 访问地址：[个人主页](http://i.dmego.cn/)
 - 使用了 [一言](http://hitokoto.cn/) 的 API 服务
 - ~~使用了 [Bing 壁纸 API](https://github.com/xCss/bing/) 服务~~
 - ~~使用了 [Yahoo Query Language (YQL)](https://developer.yahoo.com/yql/) 来解决获取 Bing 壁纸跨域问题~~
