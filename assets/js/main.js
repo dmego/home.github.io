@@ -27,34 +27,25 @@ var iUp = (function () {
 	}
 })();
 
-function getBingImages(data) {
+function getBingImages(imgUrls) {
 	/**
 	 * 获取Bing壁纸
 	 * 先使用 GitHub Action 每天获取 Bing 壁纸 URL 并更新 images.json 文件
 	 * 然后读取 images.json 文件中的数据
 	 */
-	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
-	var index = sessionStorage.getItem("index");
+	var indexName = "bing-image-index";
+	var index = sessionStorage.getItem(indexName);
 	var $panel = $('#panel');
-	if (imgUrls == null) {
-		imgUrls = data;
-		index = 0;
-		var imgUrl = imgUrls[index];
-		var url = "https://www.bing.com" + imgUrl;
-		$panel.css("background", "url('" + url + "') center center no-repeat #666");
-		$panel.css("background-size", "cover");
-		sessionStorage.setItem("imgUrls", JSON.stringify(imgUrls));
-		sessionStorage.setItem("index", index);
+	if (index == null) {
+		sessionStorage.setItem(indexName, 0);
 	} else {
-		if (index == 7)
-			index = 0;
-		else
-			index++;
+		if (index == 7) index = 0;
+		else index++;
 		var imgUrl = imgUrls[index];
 		var url = "https://www.bing.com" + imgUrl;
 		$panel.css("background", "url('" + url + "') center center no-repeat #666");
 		$panel.css("background-size", "cover");
-		sessionStorage.setItem("index", index);
+		sessionStorage.setItem(indexName, index);
 	}
 }
 
