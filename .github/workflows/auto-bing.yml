@@ -1,0 +1,33 @@
+name: Auto Update Bing Images CI
+
+on:
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    branches: [ gh-pages ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # checkout
+    - name: checkout
+      uses: actions/checkout@v2
+    # setup nodejs
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 12.x
+    - run: node ./assets/js/bing.js
+    # commit
+    - name: commit file
+      run: |
+        git config --local user.email "dmeago@gmail.com"
+        git config --local user.name "Dmego"
+        git add .
+        git commit -m "update images.json" -a
+    # push 
+    - name: push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
