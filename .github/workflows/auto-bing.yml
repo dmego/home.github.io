@@ -27,7 +27,7 @@ jobs:
       run: |
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
         git config --local user.name 'github-actions[bot]'
-        git diff --exit-code || git add . && git commit -am "update images.json"
+        git diff --exit-code || git add . && git commit -am '[bot] update images.json' --allow-empty
     # push 
     - name: push changes
       uses: ad-m/github-push-action@master
