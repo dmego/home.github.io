@@ -1,6 +1,9 @@
 name: Auto Update Bing Images CI
 
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * *"
   push:
     branches: [ gh-pages ]
   pull_request:
@@ -22,8 +25,8 @@ jobs:
     # commit
     - name: commit file
       run: |
-        git config --local user.email "dmeago@gmail.com"
-        git config --local user.name "Dmego"
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --local user.name 'github-actions[bot]'
         git add .
         git commit -m "update images.json" -a
     # push 
