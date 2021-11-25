@@ -28,7 +28,6 @@ var iUp = (function () {
 })();
 
 function getBingImages(data) {
-	console.log(data);
 	/**
 	 * 获取Bing壁纸
 	 * 先使用 GitHub Action 每天获取 Bing 壁纸 URL 并更新 images.json 文件
