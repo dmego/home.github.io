@@ -35,11 +35,11 @@
 
 - 利用 `Github Action` 提交代码需要一个 `GitHub API` 令牌, 可以在[Create Tokens](https://github.com/settings/tokens)这个地址，点击 `Generate new token`按钮来创建
   - `Expiration` 过期时间设置为 `not expiration`
-    - `Select scopes` 勾选 `repo`
-    - 点击 `Generate Token` 生成
+  - `Select scopes` 勾选 `repo`
+  - 点击 `Generate Token` 生成
 - 在仓库的 `Settings` ——>`Secrets` 功能栏中，点击 `new repository secrets` 按钮
-   -  在 `Name` 框中填写 `GH_TOKEN`
-   - 在 `Value` 栏中填写第一步生成的 `token` 值
+  -  在 `Name` 框中填写 `GH_TOKEN`
+  - 在 `Value` 栏中填写第一步生成的 `token` 值
 
 
 ### 更新时间
