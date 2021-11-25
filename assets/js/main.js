@@ -36,17 +36,13 @@ function getBingImages(imgUrls) {
 	var indexName = "bing-image-index";
 	var index = sessionStorage.getItem(indexName);
 	var $panel = $('#panel');
-	if (index == null) {
-		sessionStorage.setItem(indexName, 0);
-	} else {
-		if (index == 7) index = 0;
-		else index++;
-		var imgUrl = imgUrls[index];
-		var url = "https://www.bing.com" + imgUrl;
-		$panel.css("background", "url('" + url + "') center center no-repeat #666");
-		$panel.css("background-size", "cover");
-		sessionStorage.setItem(indexName, index);
-	}
+	if (isNaN(index) || index == 7) index = 0;
+	else index++;
+	var imgUrl = imgUrls[index];
+	var url = "https://www.bing.com" + imgUrl;
+	$panel.css("background", "url('" + url + "') center center no-repeat #666");
+	$panel.css("background-size", "cover");
+	sessionStorage.setItem(indexName, index);
 }
 
 $(document).ready(function () {
