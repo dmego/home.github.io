@@ -16,11 +16,11 @@
 
 >静态图
 
-![主页JPG](./img/home.jpg)
+![主页JPG](./assets/img/home.jpg)
 
 >动态图
 
-![主页GIF](./img/home.gif)
+![主页GIF](./assets/img/home.gif)
 
 ### 注
 
@@ -33,7 +33,7 @@
 
 ### GitHub Action 补充说明
 
-- 利用 `Github Action` 提交代码需要一个 `GitHub API` 令牌, 可以在[Create Tokens](https://github.com/settings/tokens)这个地址，点击 `Generate new token`按钮来创建
+- 利用 `Github Action` 提交代码需要一个 `GitHub API` 令牌, 可以在 [Create Tokens](https://github.com/settings/tokens) 这个地址，点击 `Generate new token` 按钮来创建
   - `Expiration` 过期时间设置为 `not expiration`
   - `Select scopes` 勾选 `repo`
   - 点击 `Generate Token` 生成
@@ -44,4 +44,4 @@
 
 ### 更新时间
 
->2021-11-25
+>2022-03-03(My Birthday)

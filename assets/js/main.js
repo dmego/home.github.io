@@ -46,20 +46,14 @@ function getBingImages(imgUrls) {
 }
 
 $(document).ready(function () {
-
 	// 获取一言数据
-	fetch('https://v1.hitokoto.cn').then(function (res) {
-		return res.json();
-	}).then(function (e) {
-		$('#description').html(e.hitokoto + "<br/> -「<strong>" + e.from + "</strong>」")
-	}).catch(function (err) {
-		console.error(err);
-	})
+	$.get('https://v1.hitokoto.cn', function (res) {
+		$('#description').html(res.hitokoto + "<br/> -「<strong>" + res.from + "</strong>」")
+	});
 
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
-
 	$(".js-avatar")[0].onload = function () {
 		$(".js-avatar").addClass("show");
 	}
