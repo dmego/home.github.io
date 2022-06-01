@@ -45,3 +45,8 @@
 ### 更新时间
 
 >2022-03-03(My Birthday)
+
+### Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=dmego/home.github.io&type=Date)](https://star-history.com/#dmego/home.github.io&Date)
+
