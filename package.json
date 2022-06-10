@@ -1,0 +1,21 @@
+{
+  "name": "dmego-home-page",
+  "version": "1.0.0",
+  "description": "Dmego Home Page",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmego/home.github.io.git"
+  },
+  "keywords": [
+    "Dmego",
+    "HomePage"
+  ],
+  "author": "Dmego",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmego/home.github.io/issues"
+  },
+  "homepage": "https://github.com/dmego/home.github.io#readme"
+}
