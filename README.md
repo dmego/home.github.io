@@ -42,9 +42,10 @@
   - 在 `Value` 栏中填写第一步生成的 `token` 值
 
 
-### 更新时间
+### 更新记录
+- 2022-06-10
+  - 发布 NPM 包，使用 UNPKG 作为资源文件的 CDN 
 
->2022-03-03(My Birthday)
 
 ### Star History
 
