@@ -45,6 +45,11 @@ function getBingImages(imgUrls) {
 	sessionStorage.setItem(indexName, index);
 }
 
+function decryptEmail(encoded) {      
+	var address = atob(encoded);
+	window.location.href = "mailto:" + address;
+}
+
 $(document).ready(function () {
 	// 获取一言数据
 	$.get('https://v1.hitokoto.cn', function (res) {
