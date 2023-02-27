@@ -34,18 +34,19 @@
 ### GitHub Action 补充说明
 
 - 利用 `Github Action` 提交代码需要一个 `GitHub API` 令牌, 可以在 [Create Tokens](https://github.com/settings/tokens) 这个地址，点击 `Generate new token` 按钮来创建
-  - `Expiration` 过期时间设置为 `not expiration`
+  - `Expiration` 过期时间设置为 `No expiration`
   - `Select scopes` 勾选 `repo`
   - 点击 `Generate Token` 生成
-- 在仓库的 `Settings` ——>`Secrets` 功能栏中，点击 `new repository secrets` 按钮
+- 在仓库的 `Settings` ——>`Secrets` 功能栏中，点击 `New repository secrets` 按钮
   -  在 `Name` 框中填写 `GH_TOKEN`
-  - 在 `Value` 栏中填写第一步生成的 `token` 值
-
+  - 在 `Secrets` 栏中填写第一步生成的 `Token` 值
+- 详细配置步骤图可以参考《[GitHub Action 配置详细步骤](./ActionNotes.md)》文档
 
 ### 更新记录
 - 2022-06-10
   - 发布 NPM 包，使用 UNPKG 作为资源文件的 CDN 
-
+- 2023-02-27
+  - 添加《GitHub Action 配置详细步骤》文档
 
 ### Star History
 
