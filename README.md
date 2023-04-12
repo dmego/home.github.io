@@ -47,6 +47,8 @@
   - 发布 NPM 包，使用 UNPKG 作为资源文件的 CDN 
 - 2023-02-27
   - 添加《GitHub Action 配置详细步骤》文档
+- 2023-04-12
+  - 移除 Jquery 依赖，使用原生 JS
 
 ### Star History
 
