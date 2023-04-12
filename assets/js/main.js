@@ -1,30 +1,30 @@
 var iUp = (function () {
-	var t = 0,
-		d = 150,
+	var time = 0,
+		duration = 150,
 		clean = function () {
-			t = 0;
+			time = 0;
 		},
-		up = function (e) {
+		up = function (element) {
 			setTimeout(function () {
-				$(e).addClass("up")
-			}, t);
-			t += d;
+				element.classList.add("up");
+			}, time);
+			time += duration;
 		},
-		down = function (e) {
-			$(e).removeClass("up");
+		down = function (element) {
+			element.classList.remove("up");
 		},
-		toggle = function (e) {
+		toggle = function (element) {
 			setTimeout(function () {
-				$(e).toggleClass("up")
-			}, t);
-			t += d;
+				element.classList.toggle("up");
+			}, time);
+			time += duration;
 		};
 	return {
 		clean: clean,
 		up: up,
 		down: down,
 		toggle: toggle
-	}
+	};
 })();
 
 function getBingImages(imgUrls) {
@@ -35,45 +35,70 @@ function getBingImages(imgUrls) {
 	 */
 	var indexName = "bing-image-index";
 	var index = sessionStorage.getItem(indexName);
-	var $panel = $('#panel');
+	var panel = document.querySelector('#panel');
 	if (isNaN(index) || index == 7) index = 0;
 	else index++;
 	var imgUrl = imgUrls[index];
 	var url = "https://www.bing.com" + imgUrl;
-	$panel.css("background", "url('" + url + "') center center no-repeat #666");
-	$panel.css("background-size", "cover");
+	panel.style.background = "url('" + url + "') center center no-repeat #666";
+	panel.style.backgroundSize = "cover";
 	sessionStorage.setItem(indexName, index);
 }
 
-function decryptEmail(encoded) {      
+function decryptEmail(encoded) {
 	var address = atob(encoded);
 	window.location.href = "mailto:" + address;
 }
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 	// 获取一言数据
-	$.get('https://v1.hitokoto.cn', function (res) {
-		$('#description').html(res.hitokoto + "<br/> -「<strong>" + res.from + "</strong>」")
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			var res = JSON.parse(this.responseText);
+			document.getElementById('description').innerHTML = res.hitokoto + "<br/> -「<strong>" + res.from + "</strong>」";
+		}
+	};
+	xhr.open("GET", "https://v1.hitokoto.cn", true);
+	xhr.send();
+
+	var iUpElements = document.querySelectorAll(".iUp");
+	iUpElements.forEach(function (element) {
+		iUp.up(element);
 	});
 
-	$(".iUp").each(function (i, e) {
-		iUp.up(e);
+	var avatarElement = document.querySelector(".js-avatar");
+	avatarElement.addEventListener('load', function () {
+		avatarElement.classList.add("show");
 	});
-	$(".js-avatar")[0].onload = function () {
-		$(".js-avatar").addClass("show");
-	}
 });
 
-$('.btn-mobile-menu__icon').click(function () {
-	if ($('.navigation-wrapper').css('display') == "block") {
-		$('.navigation-wrapper').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-			$('.navigation-wrapper').toggleClass('visible animated bounceOutUp');
-			$('.navigation-wrapper').off('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
-		});
-		$('.navigation-wrapper').toggleClass('animated bounceInDown animated bounceOutUp');
+var btnMobileMenu = document.querySelector('.btn-mobile-menu__icon');
+var navigationWrapper = document.querySelector('.navigation-wrapper');
 
+btnMobileMenu.addEventListener('click', function () {
+	if (navigationWrapper.style.display == "block") {
+		navigationWrapper.addEventListener('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+			navigationWrapper.classList.toggle('visible');
+			navigationWrapper.classList.toggle('animated');
+			navigationWrapper.classList.toggle('bounceOutUp');
+			navigationWrapper.removeEventListener('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', arguments.callee);
+		});
+		navigationWrapper.classList.toggle('animated');
+		navigationWrapper.classList.toggle('bounceInDown');
+		navigationWrapper.classList.toggle('animated');
+		navigationWrapper.classList.toggle('bounceOutUp');
 	} else {
-		$('.navigation-wrapper').toggleClass('visible animated bounceInDown');
+		navigationWrapper.classList.toggle('visible');
+		navigationWrapper.classList.toggle('animated');
+		navigationWrapper.classList.toggle('bounceInDown');
 	}
-	$('.btn-mobile-menu__icon').toggleClass('social iconfont icon-list social iconfont icon-angleup animated fadeIn');
+	btnMobileMenu.classList.toggle('social');
+	btnMobileMenu.classList.toggle('iconfont');
+	btnMobileMenu.classList.toggle('icon-list');
+	btnMobileMenu.classList.toggle('social');
+	btnMobileMenu.classList.toggle('iconfont');
+	btnMobileMenu.classList.toggle('icon-angleup');
+	btnMobileMenu.classList.toggle('animated');
+	btnMobileMenu.classList.toggle('fadeIn');
 });
