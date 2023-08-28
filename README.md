@@ -50,6 +50,8 @@
   - 添加《GitHub Action 配置详细步骤》文档
 - 2023-04-12
   - 移除 Jquery 依赖，使用原生 JS
+- 2023-08-28
+  - 将壁纸地址换成 cn.bing.com
 
 ### Star History
 
