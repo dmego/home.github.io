@@ -2,7 +2,7 @@ const https = require('https')
 const fs = require('fs')
 
 const options = {
-  hostname: 'www.cn.bing.com',
+  hostname: 'www.bing.com',
   port: 443,
   path: '/HPImageArchive.aspx?format=js&idx=0&n=8',
   method: 'GET'
