@@ -39,7 +39,7 @@ function getBingImages(imgUrls) {
 	if (isNaN(index) || index == 7) index = 0;
 	else index++;
 	var imgUrl = imgUrls[index];
-	var url = "https://www.bing.com" + imgUrl;
+	var url = "https://www.cn.bing.com" + imgUrl;
 	panel.style.background = "url('" + url + "') center center no-repeat #666";
 	panel.style.backgroundSize = "cover";
 	sessionStorage.setItem(indexName, index);
