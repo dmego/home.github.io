@@ -1,7 +1,7 @@
 {
-  "name": "dmego-home-page",
+  "name": "wlw-home-page",
   "version": "1.0.5",
-  "description": "Dmego Home Page",
+  "description": "wlw Home Page",
   "scripts": {
   },
   "repository": {
@@ -9,10 +9,10 @@
     "url": "git+https://github.com/dmego/home.github.io.git"
   },
   "keywords": [
-    "Dmego",
+    "wlw",
     "HomePage"
   ],
-  "author": "Dmego",
+  "author": "wlw",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dmego/home.github.io/issues"
