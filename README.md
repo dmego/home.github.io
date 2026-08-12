@@ -104,5 +104,5 @@ Token/Secrets 配图步骤：见 [docs/github-actions.md](docs/github-actions.md
 
 ### Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=dmego/home.github.io&type=Date)](https://star-history.com/#dmego/home.github.io&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=dmego/home.github.io&type=Date)](https://star-history.dera.page/#dmego/home.github.io&Date)
 
