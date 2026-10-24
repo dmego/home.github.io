@@ -1,8 +1,8 @@
 window.WAKATIME_WEEKLY = {
-  "updated_at": "2026-10-23T04:36:00.666Z",
+  "updated_at": "2026-10-24T04:25:48.804Z",
   "stats": {
-    "total_hours": 41.17,
-    "daily_avg": 5.88,
+    "total_hours": 35.51,
+    "daily_avg": 5.07,
     "trend": "falling",
     "max_day": {
       "date": "2026-10-18",
@@ -11,11 +11,6 @@ window.WAKATIME_WEEKLY = {
     }
   },
   "days": [
-    {
-      "date": "2026-10-17",
-      "hours": 8.24,
-      "text": "8 hrs 14 mins"
-    },
     {
       "date": "2026-10-18",
       "hours": 8.6,
@@ -43,8 +38,13 @@ window.WAKATIME_WEEKLY = {
     },
     {
       "date": "2026-10-23",
-      "hours": 2.05,
-      "text": "2 hrs 3 mins"
+      "hours": 4.63,
+      "text": "4 hrs 37 mins"
+    },
+    {
+      "date": "2026-10-24",
+      "hours": 0,
+      "text": "0 secs"
     }
   ],
   "ai": {
